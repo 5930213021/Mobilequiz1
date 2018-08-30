@@ -48,22 +48,8 @@
                   placeholder="Search"
                   onchange="ons.notification.alert('Searched for: ' + this.value)"
                 ></ons-search-input>
-              </p>
+            </p>
 
-                  <!--     <ons-toolbar>
-                    <div class="left">
-                        <ons-toolbar-button onclick="prev()">
-                          <ons-icon icon="md-chevron-left"></ons-icon>
-                        </ons-toolbar-button>
-                      </div>
-                      <div class="center">Carousel</div> 
-                      <div class="right">
-                        <ons-toolbar-button onclick="next()">
-                          <ons-icon icon="md-chevron-right"></ons-icon>
-                        </ons-toolbar-button>
-                      </div>
-                    </ons-toolbar>-->
-                  
                     <ons-carousel swipeable auto-scroll overscrollable id="carousel" style="height: 300px;">
                       <ons-carousel-item  
                         style="background : url('image/1.jpg') no-repeat center; background-size: contain;">
@@ -78,8 +64,9 @@
                       </ons-carousel-item>
                     </ons-carousel>
 
+
+                <div>
                     <div class="content" style="text-align: center">
-                  
                             <h4 style="padding-top: 10px;">Genre &amp; Mood</h4>
                             <ons-row class="category">
                               <ons-col modifier="nodivider" id="Category_1" onclick="openPlaylist(this.id)">
@@ -136,7 +123,7 @@
                               </ons-col>
                             </ons-row>
                         </div>
-
+                    </div>
                         <style type="text/css">
                             .recomended_playlist {
                               padding-left: 10px;
