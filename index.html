@@ -14,13 +14,17 @@
     <ons-page>
         <ons-toolbar>
             <div class="left">
-              <ons-toolbar-button icon="fa-shopping-bag"></ons-toolbar-button>
+              <ons-toolbar-button >
+                    <ons-icon size="30px"icon="fa-shopping-bag"></ons-icon>
+              </ons-toolbar-button>
             </div>
         
             <div class="center">Home</div>
         
             <div class="right">
-              <ons-toolbar-button icon="md-help"></ons-toolbar-button>
+              <ons-toolbar-button >
+                    <ons-icon size="30px"icon="md-help"></ons-icon>
+              </ons-toolbar-button>
             </div>
           </ons-toolbar>
         
@@ -69,23 +73,23 @@
                     <div class="content" style="text-align: center">
                             <h4 style="padding-top: 10px;">Genre &amp; Mood</h4>
                             <ons-row class="category">
-                              <ons-col style="background:yellowgreen;"  modifier="nodivider" id="Category_1" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:palevioletred;"  modifier="nodivider" id="Category_1" onclick="openPlaylist(this.id)">
                                 <div class="category_wrapper">
                                   <figure class="category_thumbnail">
-                                    <ons-icon icon="fa-users"></ons-icon>
-                                    <div class="category_title" id="Category_1_name">Party</div>
+                                    <ons-icon icon="md-favorite"></ons-icon>
+                                    <div class="category_title" id="Category_1_name">Beauity</div>
                                   </figure>
                                 </div>
                               </ons-col>
-                              <ons-col style="background:tomato;"  modifier="nodivider" id="Category_2" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:plum;"  modifier="nodivider" id="Category_2" onclick="openPlaylist(this.id)">
                                 <div class="category_wrapper">
                                   <figure class="category_thumbnail">
                                     <ons-icon icon="fa-headphones"></ons-icon>
-                                    <div class="category_title" id="Category_2_name">Relax</div>
+                                    <div class="category_title" id="Category_2_name">Music</div>
                                   </figure>
                                 </div>
                               </ons-col>
-                              <ons-col style="background:mediumaquamarine;" modifier="nodivider" id="Category_3" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:thistle;" modifier="nodivider" id="Category_3" onclick="openPlaylist(this.id)">
                                     <div class="category_wrapper">
                                       <figure class="category_thumbnail">
                                         <ons-icon icon="md-puzzle-piece"></ons-icon>
@@ -96,7 +100,7 @@
                             </ons-row>
 
                             <ons-row class="category">  
-                              <ons-col style="background:palegreen;"  modifier="nodivider" id="Category_4" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:yellowgreen;"  modifier="nodivider" id="Category_4" onclick="openPlaylist(this.id)">
                                 <div class="category_wrapper">
                                   <figure class="category_thumbnail">
                                     <ons-icon icon="fa-book"></ons-icon>
@@ -104,7 +108,7 @@
                                   </figure>
                                 </div>
                               </ons-col>
-                              <ons-col style="background:aquamarine;"  modifier="nodivider" id="Category_5" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:lightgreen;"  modifier="nodivider" id="Category_5" onclick="openPlaylist(this.id)">
                                 <div class="category_wrapper">
                                   <figure class="category_thumbnail">
                                     <ons-icon icon="md-cloud-download"></ons-icon>
@@ -112,38 +116,38 @@
                                   </figure>
                                 </div>
                               </ons-col>
-                              <ons-col style="background:teal;" modifier="nodivider" id="Category_6" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:palegreen;" modifier="nodivider" id="Category_6" onclick="openPlaylist(this.id)">
                                     <div class="category_wrapper">
                                       <figure class="category_thumbnail">
-                                        <ons-icon icon="ion-android-microphone"></ons-icon>
-                                        <div class="category_title" id="Category_6_name">Pop</div>
+                                        <ons-icon icon="md-camera-add"></ons-icon>
+                                        <div class="category_title" id="Category_6_name">Camera</div>
                                       </figure>
                                     </div>
                                   </ons-col>
                             </ons-row>
 
                             <ons-row class="category">    
-                              <ons-col style="background:thistle;" modifier="nodivider" id="Category_7" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:skyblue;" modifier="nodivider" id="Category_7" onclick="openPlaylist(this.id)">
                                 <div class="category_wrapper">
                                   <figure class="category_thumbnail">
-                                    <ons-icon icon="fa-smile-o"></ons-icon>
-                                    <div class="category_title" id="Category_7_name">Happy</div>
+                                    <ons-icon icon="md-dribbble"></ons-icon>
+                                    <div class="category_title" id="Category_7_name">Sport</div>
                                   </figure>
                                 </div>
                               </ons-col>
-                              <ons-col style="background:aquamarine;" modifier="nodivider" id="Category_8" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:lightblue;" modifier="nodivider" id="Category_8" onclick="openPlaylist(this.id)">
                                 <div class="category_wrapper">
                                   <figure class="category_thumbnail">
-                                    <ons-icon icon="fa-bed"></ons-icon>
-                                    <div class="category_title" id="Category_8_name">Sleepy</div>
+                                    <ons-icon icon="md-movie-alt"></ons-icon>
+                                    <div class="category_title" id="Category_8_name">Movie</div>
                                   </figure>
                                 </div>
                               </ons-col>
-                              <ons-col style="background:firebrick;" modifier="nodivider" id="Category_9" onclick="openPlaylist(this.id)">
+                              <ons-col style="background:aquamarine;" modifier="nodivider" id="Category_9" onclick="openPlaylist(this.id)">
                                     <div class="category_wrapper">
                                       <figure class="category_thumbnail">
                                         <ons-icon icon="md-desktop-mac"></ons-icon>
-                                        <div class="category_title" id="Category_9_name">Sleepy</div>
+                                        <div class="category_title" id="Category_9_name">Computer</div>
                                       </figure>
                                     </div>
                                   </ons-col>
@@ -233,7 +237,7 @@
       
       <template id="tab2.html">
         <ons-page id="Tab2">
-                <ons-list-header>Thumbnails and titles</ons-list-header>
+                <ons-list-header>SHOPPING CART</ons-list-header>
             
                <ons-list-item>
                   <div class="left">
@@ -243,7 +247,9 @@
                     <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
                   </div>
                   <div class="right">
-                        <ons-toolbar-button icon="md-delete"></ons-toolbar-button>
+                        <ons-toolbar-button>
+                                <ons-icon size="30px"icon="md-delete"></ons-icon>
+                        </ons-toolbar-button>
                       </div>
                 </ons-list-item>
 
@@ -255,7 +261,9 @@
                           <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
                         </div>
                         <div class="right">
-                              <ons-toolbar-button icon="md-delete"></ons-toolbar-button>
+                              <ons-toolbar-button>
+                                    <ons-icon size="30px"icon="md-delete"></ons-icon>
+                              </ons-toolbar-button>
                             </div>
                 </ons-list-item>
 
@@ -267,7 +275,9 @@
                           <span class="list-item__title">Cutest kitty</span><span class="list-item__subtitle">On the Internet</span>
                         </div>
                         <div class="right">
-                              <ons-toolbar-button icon="md-delete"></ons-toolbar-button>
+                              <ons-toolbar-button>
+                                    <ons-icon size="30px"icon="md-delete"></ons-icon>
+                              </ons-toolbar-button>
                             </div>
                 </ons-list-item>
 
