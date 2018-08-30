@@ -65,10 +65,12 @@
                     </ons-toolbar>-->
                   
                     <ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-                      <ons-carousel-item style="background-color: #085078;">
-                        <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-                          BLUE
-                        </div>
+                      <ons-carousel-item  >
+                        <div >
+                          <img class="img-fluid" src="image/1.jpg" alt=""
+                          style="width: 50px ; height : 50px">
+
+                        </div> 
                       </ons-carousel-item>
                       <ons-carousel-item style="background-color: #373B44;">
                         <div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
@@ -100,6 +102,22 @@
     document.addEventListener('prechange', function(event) {
     document.querySelector('ons-toolbar .center')
     .innerHTML = event.tabItem.getAttribute('label');
-    });</script>
+    });
 
+    var prev = function() {
+    var carousel = document.getElementById('carousel');
+    carousel.prev();
+    };
+  
+    var next = function() {
+    var carousel = document.getElementById('carousel');
+    carousel.next();
+    };
+  
+    ons.ready(function() {
+    var carousel = document.addEventListener('postchange', function(event) {
+      console.log('Changed to ' + event.activeIndex)
+    });
+     });
+</script>
 </html>
